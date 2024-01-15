@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [KANNAN]</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Doodle+Shadow&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: poppins;
+      text-align: left;
+    }
+    body{
+      background-color: #cecfcf;
+    }
+    .main{
+      background-color: #cecfcf;
+      margin-top: 170px;
+      display: grid;
+      justify-items: center;
+      margin-left:10px ;
+      margin-right:10px ;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(4 );
+      grid-template-areas: 
+      "q q e r"
+      "t y y r";
+      gap:12px;
+    }
+    .grid-iteam1{
+      background-color:#733fc8;
+      background-image: url(images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position-x:350px ;
+      max-width: 490px;
+      height: 100%;
+      grid-area: q;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .grid-iteam2{
+      background-color:#49556b;
+      max-width:260px;
+      height:100%;
+      grid-area: e;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .grid-iteam3{
+      background-color:#ffffff;
+      max-width: 280px;
+      height:100%;
+      grid-area: r;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .grid-iteam4{
+      background-color:#ffffff;
+      max-width:250px;
+      height:100%;
+      grid-area: t;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .grid-iteam5{
+      background-color:#18202d;
+      max-width:500px;
+      height:100%;
+      grid-area: y;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .in1,.in3,.in5,.in7,.in9{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 25px;  
+    }
+    img{
+      height:50px ;
+      width:50px ;
+      border-radius: 50%;
+    }
+    .con1,.con5,.con9,.con13,.con17{
+      height: 54px;
+      border-style: solid;
+      border-radius: 50%;
+      border-width: 2px;
+      border-color: #ffff;
+    }
+    .con2,.con6,.con10,.con14,.con18{
+      margin-left: 12px;
+    }
+    .in2,.in4,.in6,.in8,.in10{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    #k1,#k2,#k5,#k6{
+      color: #ffff;
+      font-size: 13px;
+    }
+    #k9,#k10,#k13,#k14,#k17,#k18{
+      font-size: 13px;
+    }
+    #k1{
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    #k3,#k4{
+      color: #ffff;
+    }
+    #k3,#k7,#k11,#k15,#k19{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    #k4,#k8,#k12,#k16,#k20{
+      font-size: 11px;
+      line-height: 20px;
+    }
+    #k5,#k6{
+      color: #ffff;
+    }
+    #k5{
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    #k7,#k8{
+      color: #ffff;
+    }
+    #k17,#k18{
+      color: #ffff;
+    }
+    #k19,#k20{
+      color: #ffff;
+    }
+    @media  only screen and (max-width:600px) {
+      .grid{
+      display: grid;
+      grid-template-columns: repeat(4 );
+      grid-template-areas: 
+       "q"
+       "e"
+       "t"
+       "y"
+       "r"
+      ;
+      gap:20px;
+    }
+    .grid-iteam1{
+      max-width: 480px;
+      height: 100%;
+      background-position-x:340px ;
+    }
+    .grid-iteam2{
+      max-width:480px;
+      height:100%;
+    }
+    .grid-iteam3{
+      max-width: 480px;
+      height:100%;
+    }
+    .grid-iteam4{
+      max-width:480px;
+      height:100%;
+    }
+    .grid-iteam5{
+      max-width:480px;
+      height:100%;
+    }
+    }
+    .attribution{
+      margin-top: 100px;
+      text-align: center;
+    }
+</style>
+<body>
+  <div class="main">
+    <div class="grid">
+        <div class="grid-iteam1">
+          <div class="in1">
+            <div class="con1">
+              <img src="images/image-daniel.jpg" alt="profil">
+            </div>
+            <div class="con2">
+              <p id="k1">Daniel Clifford</p>
+              <p id="k2"> Verified Graduate</p>
+            </div>
+          </div>
+          <div class="in2">
+            <div class="con3">
+              <p id="k3">I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+                in the company I joined. I honestly feel I got every penny’s worth.</p>
+            </div>
+            <div class="con4">
+              <p id="k4">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+                transition and have heard some people who had an amazing experience here. I signed up 
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-iteam2">
+          <div class="in3">
+            <div class="con5">
+              <img src="images/image-jonathan.jpg" alt="profil">
+            </div>
+            <div class="con6">
+              <p id="k5"> Jonathan Walters</p>
+              <p id="k6">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="in4">
+            <div class="con7">
+              <p id="k7"> The team was very supportive and kept me motivated</p>
+            </div>
+            <div class="con8">
+              <p id="k8">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+                for a big company. This was one of the best investments I’ve made in myself. ”</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-iteam3">
+          <div class="in5">
+            <div class="con9">
+              <img src="images/image-kira.jpg" alt="profil">
+            </div>
+            <div class="con10">
+              <p id="k9"> Kira Whittle</p>
+              <p id="k10">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="in6">
+            <div class="con11">
+              <p id="k11"> Such a life-changing experience. Highly recommended!</p>
+            </div>
+            <div class="con12">
+              <p id="k12">  “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+                professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+                student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+                did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+                project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+                could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+                experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+                100% recommend! ”</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-iteam4">
+          <div class="in7">
+            <div class="con13">
+              <img src="images/image-jeanette.jpg" alt="profil">
+            </div>
+            <div class="con14">
+              <p id="k13">Jeanette Harmon</p>
+              <p id="k14">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="in8">
+            <div class="con15">
+              <p id="k15">  An overall wonderful and rewarding experience</p>
+            </div>
+            <div class="con16">
+              <p id="k16">  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+                while doing something I love. ”</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-iteam5">
+          <div class="in9">
+            <div class="con17">
+              <img src="images/image-kira.jpg" alt="profil">
+            </div>
+            <div class="con18">
+              <p id="k17">Patrick Abrams</p>
+              <p id="k18">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="in10">
+            <div class="con19">
+              <p id="k19">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+                learning from their experiences was easy.</p>
+            </div>
+            <div class="con20">
+              <p id="k20">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+                gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+                junior developer. The standard is above the rest. You will get the personal attention you need from 
+                an incredible community of smart and amazing people. ”</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kannan AL</a>.
+  </div>
+</body>
+</html>
